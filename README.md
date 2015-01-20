@@ -12,7 +12,7 @@ Publier la portlet CMS istex.portlet-definition.xml
 
 [ligne de commande]
 
---> `$HOMEDIR/ant.sh -f $HOMEDIR/src/esup-uportal/build.xml data-import -Dfile=$HOMEDIR/src/esup-uportal/uportal-war/src/main/data/ul_entities/portlet-definition/istex.portlet-definition.xml`
+--> `ant -f $ESUP_HOMEDIR/build.xml data-import -Dfile=$ESUP_HOMEDIR/uportal-war/src/main/data/VOTRE_UNIV_entities/portlet-definition/istex.portlet-definition.xml`
 
 ** Logs **
 
@@ -34,7 +34,7 @@ Importer ou ré-importer l'onglet
 
 [ligne de commande]
 
---> `$HOMEDIR/ant.sh -f $HOMEDIR/src/esup-uportal/build.xml data-import -Dfile=$HOMEDIR/src/esup-uportal/uportal-war/src/main/data/ul_entities/fragment-layout/bu-lo.fragment-layout.xml`
+--> `ant -f $ESUP_HOMEDIR/build.xml data-import -Dfile=$ESUP_HOMEDIR/uportal-war/src/main/data/VOTRE_UNIV_entities/fragment-layout/bu-lo.fragment-layout.xml`
 
 ** Logs **
 
