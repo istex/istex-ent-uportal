@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <portlet-definition version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type">
-    <title>IsTEX2</title>
-    <name>IsTEX2</name>
-    <fname>istex2</fname>
-    <desc>IsTEX2</desc>
+    <title>ISTEX</title>
+    <name>ISTEX</name>
+    <fname>istex</fname>
+    <desc>Interface d'interrogation et d'accès aux ressources ISTEX</desc>
     <type>Advanced CMS</type>
     <timeout>5000</timeout>
     <portlet-descriptor>
@@ -12,6 +12,7 @@
     </portlet-descriptor>
     <category>Enseignement et BU</category>
     <group>Portal Administrators</group>
+    <group>Direction de la Documentation et de l'Edition</group>
     <parameter>
         <name>alternate</name>
         <value>false</value>
@@ -84,14 +85,14 @@
     &lt;/style&gt;
 
 
-        &lt;h1&gt;Site Web de mon Université&lt;/h1&gt;
+        &lt;div&gt;&lt;p&gt;Rechercher sur la plate-forme ISTEX, qui héberge toutes les ressources en ligne acquises en licence nationale&lt;/p&gt;&lt;/div&gt;
 
 
     &lt;div id="ent-auth"&gt;&lt;/div&gt;
     &lt;div id="ent-search"&gt;&lt;/div&gt;
     &lt;div id="ent-results"&gt;&lt;/div&gt;
-
-
+    
+    
 &lt;script&gt;
 var istexConfig = {
   // l'adresse de l'API de l'Istex
@@ -121,6 +122,13 @@ var istexConfig = {
         $('#ent-search').istexSearch();
         $('#ent-results').istexResults();
     &lt;/script&gt;
+    
+    
+    &lt;br/&gt;
+    &lt;br/&gt;
+    
+&lt;div&gt;&lt;small&gt;&lt;p&gt;Attention, les abonnements souscrits pour l'Université seule ne sont pas hébergés sur la plate-forme mais sur les sites des éditeurs. Pour rechercher sur l'ensemble des ressources accessibles, il est préférable d'utiliser ULysse&lt;/p&gt;&lt;/small&gt;&lt;/div&gt;
+
 
 
 </value>
