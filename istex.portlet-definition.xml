@@ -12,7 +12,7 @@
     </portlet-descriptor>
     <category>Enseignement et BU</category>
     <group>Portal Administrators</group>
-    <group>Direction de la Documentation et de l'Edition</group>
+    <group>Everyone</group>
     <parameter>
         <name>alternate</name>
         <value>false</value>
