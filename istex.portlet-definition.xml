@@ -74,8 +74,8 @@
 
     &lt;!-- Charge les widgets Istex --&gt;
 &lt;!-- Test GC --&gt;
-    &lt;script type="text/javascript" src="//istex.github.io/js/widgets.js"&gt;&lt;/script&gt;
-    &lt;link rel="stylesheet" href="//istex.github.io/themes/default/widgets.css" /&gt;
+    &lt;script type="text/javascript" src="//istex.github.io/js/widgets.min.js"&gt;&lt;/script&gt;
+    &lt;link rel="stylesheet" href="//istex.github.io/themes/default/widgets.min.css" /&gt;
 
     &lt;style&gt;
       #ent-search, #ent-results {
@@ -96,23 +96,8 @@
 &lt;script&gt;
 var istexConfig = {
   // l'adresse de l'API de l'Istex
-  istexApi: 'https://api-istex-fr.bases-doc.univ-lorraine.fr',
-
-  // pour lancer une recherche au chargement de la page
-  // positionner les mots à rechercher
-  query: "",
-
-  // le nom de l'évènement émit au moment d'une recherche    
-  resultsEventName: "istex-results",
-
-  // la taille max en nombre de caractères du résumé
-  abstractLength: 350,
-
-  // la taille max en nombre de caractères du titre
-  titleLength: 100,
-
-  // quel est le format clickable au niveau du titre
-  fullTextOnTitle: 'pdf'
+  // ex: d'URL proxifiée par ezproxy https://api-istex-fr.bases-doc.univ-lorraine.fr
+  istexApi: 'https://api.istex.fr'
 };
 &lt;/script&gt;
 
