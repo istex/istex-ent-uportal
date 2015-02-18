@@ -19,7 +19,7 @@ Toujours dans le fichier *istex.portlet-definition.xml*, cela se situe dans la b
 
 Ici, se situe le codde HTML/javascript qu'affichera la portlet. 
 
-Vous pouvez d'une part personnaliser les textes, la mise en page etc. On encodera alors les signes < et > des balises par ~~&lt;~~ et ~~&gt;~~. (Voir l'exemple)
+Vous pouvez d'une part personnaliser les textes, la mise en page etc. On encodera alors les signes < et > des balises par `&lt;` et `&gt;`. (Voir l'exemple)
 
 Vous pouvez également configurer les widgets grâce à la variable javascript *istexConfig*
 
@@ -32,14 +32,14 @@ Vous pouvez également configurer les widgets grâce à la variable javascript *
 
 Par exemple, si on souhaite chager le nombre de résultats par page (par défaut : 10) et le nombre maximum de pages à afficher (par défaut : 10) on écrira:
     
-'''javascript
+```javascript
     var istexConfig = {
         // l'adresse de l'API de l'Istex
         istexApi: 'https://api.istex.fr',
         pageSize: 30,
         maxPagesInPagination: 5
     };
-'''
+```
 
 Voir les [Paramètres des widgets](https://github.com/istex/istex-widgets#param%C3%A8tres-des-widgets)
 
