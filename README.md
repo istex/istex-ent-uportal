@@ -4,9 +4,44 @@ Module uPortal ayant comme vocation de permettre l'intégration des ressources I
 
 ## Installation
 
-### la portlet CMS
+### Configuration la portlet CMS
 
 Adapter le fichier *istex.portlet-definition.xml* pour y préciser le/les groupes autorisés à accéder à l'outil et la/les catégories dans la/lesquelles on va trouver le service
+
+### Personnalisation du contenu et configuration des Widgets
+
+Toujours dans le fichier *istex.portlet-definition.xml*, cela se situe dans la balise *value* de la préférence nommée *content*
+
+    <portlet-preference>
+        <name>content</name>
+        <readOnly>false</readOnly>
+        <value> **ICI** </value
+
+Ici, se situe le codde HTML/javascript qu'affichera la portlet. 
+
+Vous pouvez d'une part personnaliser les textes, la mise en page etc. On encodera alors les signes < et > des balises par &lt; et &gt;. (Voir l'exemple)
+
+Vous pouvez également configurer les widgets grâce à la variable javascript *istexConfig*
+    var istexConfig = {
+        // l'adresse de l'API de l'Istex
+        istexApi: 'https://api.istex.fr'
+    };
+
+Par exemple, si on souhaite chager le nombre de résultats par page (par défaut : 10) et le nombre maximum de pages à afficher (par défaut : 10) on écrira:
+
+    var istexConfig = {
+        // l'adresse de l'API de l'Istex
+        istexApi: 'https://api.istex.fr',
+        pageSize: 30,
+        maxPagesInPagination: 5
+    };
+
+Voir les [Paramètres des widgets](https://github.com/istex/istex-widgets#param%C3%A8tres-des-widgets)
+
+
+### Déploiement de la portlet dans l'ENT
+
+#### Publication de la portlet
 
 Publier la portlet CMS istex.portlet-definition.xml
 
@@ -22,7 +57,7 @@ Publier la portlet CMS istex.portlet-definition.xml
     [java]  INFO [03:38,436] Imported : file:/home/uportal/up-4/src/esup-uportal/uportal-war/src/main/data/ul_entities/portlet-definition/istex.portlet-definition.xml
     [...]
 
-### l'onglet
+#### Publication de l'onglet
 
 Ajouter la portlet dans l'onglet souhaité
 
