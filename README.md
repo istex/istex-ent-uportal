@@ -23,23 +23,23 @@ Vous pouvez d'une part personnaliser les textes, la mise en page etc. On encoder
 
 Vous pouvez également configurer les widgets grâce à la variable javascript *istexConfig*
 
-    '''javascript
+```javascript
     var istexConfig = {
         // l'adresse de l'API de l'Istex
         istexApi: 'https://api.istex.fr'
     };
-	'''
+```
 
 Par exemple, si on souhaite chager le nombre de résultats par page (par défaut : 10) et le nombre maximum de pages à afficher (par défaut : 10) on écrira:
     
-    '''javascript
+'''javascript
     var istexConfig = {
         // l'adresse de l'API de l'Istex
         istexApi: 'https://api.istex.fr',
         pageSize: 30,
         maxPagesInPagination: 5
     };
-	'''
+'''
 
 Voir les [Paramètres des widgets](https://github.com/istex/istex-widgets#param%C3%A8tres-des-widgets)
 
