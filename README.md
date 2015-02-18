@@ -1,6 +1,6 @@
 # istex-ent-uportal
 
-Module uPortal ayant comme vocation de permettre l'intégration des ressources ISTEX dans un ENT uPortal
+Module uPortal ayant pour vocation de permettre l'intégration des ressources ISTEX dans un ENT uPortal
 
 ## Installation
 
