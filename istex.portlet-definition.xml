@@ -73,14 +73,12 @@
     &lt;/script&gt;
 
     &lt;!-- Charge les widgets Istex --&gt;
-&lt;!-- Test GC --&gt;
     &lt;script type="text/javascript" src="//istex.github.io/js/widgets.min.js"&gt;&lt;/script&gt;
     &lt;link rel="stylesheet" href="//istex.github.io/themes/default/widgets.min.css" /&gt;
 
     &lt;style&gt;
       #ent-search, #ent-results {
           width: 600px;
-          /*border: 1px solid red;*/
       }
     &lt;/style&gt;
 
@@ -97,7 +95,24 @@
 var istexConfig = {
   // l'adresse de l'API de l'Istex
   // ex: d'URL proxifiée par ezproxy https://api-istex-fr.bases-doc.univ-lorraine.fr
-  istexApi: 'https://api.istex.fr'
+  istexApi: 'https://api.istex.fr',
+
+  // pour lancer une recherche au chargement de la page
+  // positionner les mots à rechercher
+  query: "",
+
+  // le nom de l'évènement émit au moment d'une recherche    
+  resultsEventName: "istex-results",
+
+  // la taille max en nombre de caractères du résumé
+  abstractLength: 350,
+
+  // la taille max en nombre de caractères du titre
+  titleLength: 100,
+
+  // quel est le format clickable au niveau du titre
+  fullTextOnTitle: 'pdf'
+
 };
 &lt;/script&gt;
 
@@ -112,7 +127,7 @@ var istexConfig = {
     &lt;br/&gt;
     &lt;br/&gt;
     
-&lt;div&gt;&lt;small&gt;&lt;p&gt;Attention, les abonnements souscrits pour l'Université seule ne sont pas hébergés sur la plate-forme mais sur les sites des éditeurs. Pour rechercher sur l'ensemble des ressources accessibles, il est préférable d'utiliser &lt;a href="http://ulysse.bu.univ-lorraine.fr"&gt;ULysse&lt;/a&gt;&lt;/p&gt;&lt;/small&gt;&lt;/div&gt;
+&lt;div&gt;&lt;small&gt;&lt;p&gt;Attention, les abonnements souscrits pour l'Université seule ne sont pas hébergés sur la plate-forme mais sur les sites des éditeurs. Pour rechercher sur l'ensemble des ressources accessibles, il est préférable d'utiliser &lt;a href="#"&gt;Indiquez ici un lien vers votre discovery tool&lt;/a&gt;&lt;/p&gt;&lt;/small&gt;&lt;/div&gt;
 
 
 
