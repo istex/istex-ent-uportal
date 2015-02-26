@@ -91,7 +91,7 @@ Vous trouverez dans ul_scripts l'exemple de déploiement dans l'ENT de l'Univers
 * publish.sh : Publication de la portlet puis de l'onglet
 
 
-### Déploiement de la portlet dans l'ENT v4
+### Déploiement de la portlet dans l'ENT v3
 
 #### Publication de la portlet
 
@@ -106,7 +106,7 @@ Ajouter la portlet dans l'onglet souhaité
 
 Exemple dans *bu-lo.fragment-layout* :
 
-`<channel unremovable="" immutable="" hidden="" fname="cms-istex"/>
+`<channel unremovable="" immutable="" hidden="" fname="cms-istex"/>`
 
 Importer ou ré-importer l'onglet
 
