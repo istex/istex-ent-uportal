@@ -6,11 +6,11 @@ Module uPortal ayant pour vocation de permettre l'intégration des ressources IS
 
 ### Configuration la portlet CMS
 
-Adapter le fichier *istex.portlet-definition.xml* pour y préciser le/les groupes autorisés à accéder à l'outil et la/les catégories dans la/lesquelles on va trouver le service
+Adapter le fichier *istex.portlet-definition.xml (pour les versions 4)* ou *cms-istex.channel (pour les versions 3)* pour y préciser le/les groupes autorisés à accéder à l'outil et la/les catégories dans la/lesquelles on va trouver le service
 
 ### Personnalisation du contenu et configuration des Widgets
 
-Toujours dans le fichier *istex.portlet-definition.xml*, cela se situe dans la balise *value* de la préférence nommée *content*
+Toujours dans le fichier *istex.portlet-definition.xml* ou *cms-istex.channel*, cela se situe dans la balise *value* de la préférence nommée *content*
 
     <portlet-preference>
         <name>content</name>
@@ -44,7 +44,7 @@ Par exemple, si on souhaite chager le nombre de résultats par page (par défaut
 Voir les [Paramètres des widgets](https://github.com/istex/istex-widgets#param%C3%A8tres-des-widgets)
 
 
-### Déploiement de la portlet dans l'ENT
+### Déploiement de la portlet dans l'ENT v4
 
 #### Publication de la portlet
 
@@ -89,3 +89,28 @@ Vous trouverez dans ul_scripts l'exemple de déploiement dans l'ENT de l'Univers
 * publish-portlet.sh : Publication de la portlet
 * publish-fragment.sh : Publication de l'onglet
 * publish.sh : Publication de la portlet puis de l'onglet
+
+
+### Déploiement de la portlet dans l'ENT v4
+
+#### Publication de la portlet
+
+
+[ligne de commande]
+
+--> `ant db.import -Ddir=VOTRE_DOSSIER_DE_STOCKAGE_channels -Dpattern="cms-istex.channel"`
+
+#### Publication de l'onglet
+
+Ajouter la portlet dans l'onglet souhaité
+
+Exemple dans *bu-lo.fragment-layout* :
+
+`<channel unremovable="" immutable="" hidden="" fname="cms-istex"/>
+
+Importer ou ré-importer l'onglet
+
+[ligne de commande]
+
+--> `ant db.import -Ddir=VOTRE_DOSSIER_DE_STOCKAGE_fragment-layout -Dpattern="bu-lo.fragment-layout"`
+
