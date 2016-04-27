@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <portlet-definition version="4.0" xsi:schemaLocation="https://source.jasig.org/schemas/uportal/io/portlet-definition https://source.jasig.org/schemas/uportal/io/portlet-definition/portlet-definition-4.0.xsd" xmlns:ns2="https://source.jasig.org/schemas/uportal" xmlns="https://source.jasig.org/schemas/uportal/io/portlet-definition" xmlns:ns4="https://source.jasig.org/schemas/uportal/io/user" xmlns:ns3="https://source.jasig.org/schemas/uportal/io/subscribed-fragment" xmlns:ns5="https://source.jasig.org/schemas/uportal/io/event-aggregation" xmlns:ns6="https://source.jasig.org/schemas/uportal/io/stylesheet-descriptor" xmlns:ns7="https://source.jasig.org/schemas/uportal/io/permission-owner" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns8="https://source.jasig.org/schemas/uportal/io/portlet-type">
-    <title>ISTEX</title>
-    <name>ISTEX</name>
-    <fname>istex</fname>
+    <title>Ressources ISTEX</title>
+    <name>Ressources ISTEX</name>
+    <fname>esup-istex</fname>
     <desc>Interface d'interrogation et d'accès aux ressources ISTEX</desc>
     <type>Advanced CMS</type>
     <timeout>5000</timeout>
@@ -66,71 +66,43 @@
         <name>content</name>
         <readOnly>false</readOnly>
         <value>
-
-    &lt;!-- Code pour permettre aux widget ISTEX d'utiliser le jQuery de l'ENT --&gt;
-    &lt;script type="text/javascript"&gt;
-    jQuery = $ = up.jQuery;
-    &lt;/script&gt;
-
-    &lt;!-- Charge les widgets Istex --&gt;
-    &lt;script type="text/javascript" src="//istex.github.io/js/widgets.min.js"&gt;&lt;/script&gt;
-    &lt;link rel="stylesheet" href="//istex.github.io/themes/default/widgets.min.css" /&gt;
-
-    &lt;style&gt;
-      #ent-search, #ent-results {
-          width: 600px;
-      }
-    &lt;/style&gt;
-
-
-        &lt;div&gt;&lt;p&gt;Rechercher sur la plate-forme ISTEX, qui héberge toutes les ressources en ligne acquises en licence nationale&lt;/p&gt;&lt;/div&gt;
-
-
-    &lt;div id="ent-auth"&gt;&lt;/div&gt;
-    &lt;div id="ent-search"&gt;&lt;/div&gt;
-    &lt;div id="ent-results"&gt;&lt;/div&gt;
-    
-    
-&lt;script&gt;
-var istexConfig = {
-  // l'adresse de l'API de l'Istex
-  // ex: d'URL proxifiée par ezproxy https://api-istex-fr.bases-doc.univ-lorraine.fr
-  istexApi: 'https://api.istex.fr',
-
-  // pour lancer une recherche au chargement de la page
-  // positionner les mots à rechercher
-  query: "",
-
-  // le nom de l'évènement émit au moment d'une recherche    
-  resultsEventName: "istex-results",
-
-  // la taille max en nombre de caractères du résumé
-  abstractLength: 350,
-
-  // la taille max en nombre de caractères du titre
-  titleLength: 100,
-
-  // quel est le format clickable au niveau du titre
-  fullTextOnTitle: 'pdf'
-
-};
-&lt;/script&gt;
-
-
-    &lt;script type="text/javascript"&gt;
-        $('#ent-auth').istexAuth();
-        $('#ent-search').istexSearch();
-        $('#ent-results').istexResults();
-    &lt;/script&gt;
-    
-    
-    &lt;br/&gt;
-    &lt;br/&gt;
-    
-&lt;div&gt;&lt;small&gt;&lt;p&gt;Attention, les abonnements souscrits pour l'Université seule ne sont pas hébergés sur la plate-forme mais sur les sites des éditeurs. Pour rechercher sur l'ensemble des ressources accessibles, il est préférable d'utiliser &lt;a href="#"&gt;Indiquez ici un lien vers votre discovery tool&lt;/a&gt;&lt;/p&gt;&lt;/small&gt;&lt;/div&gt;
-
-
-
-</value>
+		&#xD;
+		&lt;div id="istex-info"&gt;&lt;/div&gt;&#xD;
+		&lt;istex-search&gt;&lt;/istex-search&gt;&#xD;
+		&lt;istex-results&gt;&lt;/istex-results&gt;&#xD;
+		&lt;istex-facets&gt;&lt;/istex-facets&gt;&#xD;
+		&#xD;
+		&lt;script&gt;&#xD;
+			var istexConfig = {&#xD;
+			  istexApi: 'https://api.istex.fr',&#xD;
+			  proxyApi: 'https://api-istex-fr.votre-ezproxy.univ.fr',&#xD;
+			  focusInputQueryOnLoad: true,&#xD;
+			  titleLength: 100,&#xD;
+			};&#xD;
+		&#xD;
+			[&#xD;
+				'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',&#xD;
+				'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css',&#xD;
+				'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.css',&#xD;
+				'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexauth.css',&#xD;
+				'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexfacets.css',&#xD;
+				'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexresults.css',&#xD;
+				'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexsearch.css',&#xD;
+				'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexportal.css'&#xD;
+			].forEach(function(href) {&#xD;
+						var link = document.createElement('link');&#xD;
+						link.href = href;&#xD;
+						link.rel = &quot;stylesheet&quot;;&#xD;
+						document.head.appendChild(link);&#xD;
+			});&#xD;
+		&lt;/script&gt;&#xD;
+		&#xD;
+		&lt;!-- Dependencies --&gt;&#xD;
+		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js&quot;&gt;&lt;/script&gt;&#xD;
+		&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.js&quot;&gt;&lt;/script&gt;&#xD;
+		&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/app/app.js&quot;&gt;&lt;/script&gt;&#xD;
+		&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-ent-uportal/master/info.js&quot;&gt;&lt;/script&gt;&#xD;
+		&#xD;
+		</value>
     </portlet-preference>
 </portlet-definition>

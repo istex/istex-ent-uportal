@@ -1,0 +1,119 @@
+
+<channel-definition script="classpath://org/jasig/portal/io/import-channel_v3-2.crn">
+  <title>Ressources ISTEX</title>
+  <name>Ressources ISTEX</name>
+  <fname>esup-istex</fname>
+  <desc>Interface d'interrogation et d'accès aux ressources ISTEX</desc>
+  <type>CMS</type>
+  <class>org.jasig.portal.channels.portlet.CSpringPortletAdaptor</class>
+  <timeout>5000</timeout>
+  <hasedit>N</hasedit>
+  <hashelp>N</hashelp>
+  <hasabout>N</hasabout>
+  <secure>N</secure>
+  <locale>en_US</locale>
+  <categories>                
+        <category>Enseignement et BU</category>
+  </categories>
+  <groups>
+    <group>Portal Administrators</group>
+	<group>Everyone</group>
+  </groups>
+  <users/>
+  <parameters>
+    <parameter> 
+      <name>portletApplicationId</name>  
+      <value>/SimpleContentPortlet</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>showChrome</name>  
+      <value>true</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>isFrameworkPortlet</name>  
+      <value>false</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>highlight</name>  
+      <value>false</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>portletName</name>  
+      <value>cms</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>hideFromMobile</name>  
+      <value>false</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>alternate</name>  
+      <value>false</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+    <parameter> 
+      <name>disableDynamicTitle</name>  
+      <value>true</value>  
+      <description></description>  
+      <ovrd>N</ovrd> 
+    </parameter>
+  </parameters>
+  <portletPreferences>
+    <portletPreference> 
+      <name>content</name>  
+      <read-only>false</read-only>  
+      <values>
+	<value>
+	&lt;div id="istex-info"&gt;&lt;/div&gt;
+	&lt;istex-search&gt;&lt;/istex-search&gt;
+	&lt;istex-results&gt;&lt;/istex-results&gt;
+	&lt;istex-facets&gt;&lt;/istex-facets&gt;
+	
+	&lt;script&gt;
+		var istexConfig = {
+		  istexApi: 'https://api.istex.fr',
+		  proxyApi: 'https://api-istex-fr.votre-ezproxy.univ.fr',
+		  focusInputQueryOnLoad: true,
+		  titleLength: 100,
+		};
+	
+		[
+			'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
+			'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css',
+			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.css',
+			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexauth.css',
+			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexfacets.css',
+			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexresults.css',
+			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexsearch.css',
+			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexportal.css'
+		].forEach(function(href) {
+					var link = document.createElement('link');
+					link.href = href;
+					link.rel = &quot;stylesheet&quot;;
+					document.head.appendChild(link);
+		});
+	&lt;/script&gt;
+	
+	&lt;!-- Dependencies --&gt;
+	&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/app/app.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-ent-uportal/master/info.js&quot;&gt;&lt;/script&gt;
+	
+	</value>
+      </values> 
+    </portletPreference>
+  </portletPreferences>
+</channel-definition>
