@@ -92,12 +92,12 @@
 		[
 			'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
 			'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css',
-			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.css',
-			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexauth.css',
-			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexfacets.css',
-			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexresults.css',
-			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexsearch.css',
-			'https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexportal.css'
+			'https://cdn.rawgit.com/istex/istex-widgets-angular/master/public/slider/rzslider.css',
+			'https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexauth.css',
+			'https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexfacets.css',
+			'https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexresults.css',
+			'https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexsearch.css',
+			'https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexportal.css'
 		].forEach(function(href) {
 					var link = document.createElement('link');
 					link.href = href;
@@ -108,9 +108,9 @@
 	
 	&lt;!-- Dependencies --&gt;
 	&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js&quot;&gt;&lt;/script&gt;
-	&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.js&quot;&gt;&lt;/script&gt;
-	&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/app/app.js&quot;&gt;&lt;/script&gt;
-	&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-ent-uportal/master/info.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://cdn.rawgit.com/istex/istex-widgets-angular/master/public/slider/rzslider.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://cdn.rawgit.com/istex/istex-widgets-angular/master/app/app.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://cdn.rawgit.com/istex/istex-ent-uportal/master/info.js&quot;&gt;&lt;/script&gt;
 	
 	</value>
       </values> 

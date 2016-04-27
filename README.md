@@ -58,16 +58,16 @@ Si vous souhaitez les mettre dans votre ENT et ne pas créer une dépendance ave
 vous devez telécharger les fichiers suivants, les mettre sur votre ENT et enfin modifier la publication du canal pour donner leur nouveau chemin d'accès (sur votre ENT) : 
  * https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
  * https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.css
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexauth.css
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexfacets.css
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexresults.css
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexsearch.css
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/css/istexportal.css
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/public/slider/rzslider.css
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexauth.css
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexfacets.css
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexresults.css
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexsearch.css
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexportal.css
  * https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.js
- * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/app/app.js
- * https://raw.githubusercontent.com/istex/istex-ent-uportal/master/info.js
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/public/slider/rzslider.js
+ * https://cdn.rawgit.com/istex/istex-widgets-angular/master/app/app.js
+ * https://cdn.rawgit.com/istex/istex-ent-uportal/master/info.js
 			
 ### Déploiement de la portlet dans l'ENT v4
 

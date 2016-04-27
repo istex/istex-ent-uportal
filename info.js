@@ -50,6 +50,7 @@ var trigClickInfo = function(){
     arrow.dispatchEvent(event);
   }
 };
+/*
 var submitButton = document.getElementsByClassName("istex-search-submit")[0];
 if (submitButton === undefined){
   setTimeout(function(){
@@ -59,3 +60,4 @@ if (submitButton === undefined){
 }else{
   submitButton.onclick = trigClickInfo;
 }
+*/
