@@ -7,7 +7,7 @@ var warning = ''+
 	'<p id="widget-istex-info" class="widget-istex-info blog-description" style="height: 100%; margin-left: 10px; margin-right: 10px; font-size:  110%;">'+
 		'Cette interface a été créée dans le cadre du <a href="http://www.istex.fr/" target="_blank">projet ISTEX</a>, dont le but est de mettre à disposition de la communauté de l’enseignement supérieur et de la recherche un ensemble de documents scientifiques dans toutes les disciplines.'+
 		'Un projet complémentaire a vu le jour : <a href="http://www.istex.fr/istex%E2%88%92snu/" target="_blank">ISTEX-SNU (ISTEX intégré aux Services Numériques des Usagers)</a>.<br/><br/>' +
-		'Si vous rencontrez un problème, ou si vous avez des remarques sur les résultats de vos recherches dans ISTEX-SNU n\'hésitez pas, contactez <a href="mailto:snu@listes.istex.fr" target="_blank">l\'équipe ISTEX-SNU (snu@listes.istex.fr)</a>.<br>'+
+		'Si vous rencontrez un problème, ou si vous avez des remarques sur les résultats de vos recherches dans ISTEX-SNU n\'hésitez pas, contactez <a href="mailto:snu-contact@listes.istex.fr" target="_blank">l\'équipe ISTEX-SNU (snu-contact@listes.istex.fr)</a>.<br>'+
 	'</p>'+
 '</div>';
 var d = document.createElement("div");
