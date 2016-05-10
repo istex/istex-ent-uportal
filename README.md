@@ -65,9 +65,9 @@ vous devez telécharger les fichiers suivants, les mettre sur votre ENT et enfin
  * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexsearch.css
  * https://cdn.rawgit.com/istex/istex-widgets-angular/master/css/istexportal.css
  * https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js
- * https://cdn.rawgit.com/istex/istex-widgets-angular/master/public/slider/rzslider.js
- * https://cdn.rawgit.com/istex/istex-widgets-angular/master/app/app.js
- * https://cdn.rawgit.com/istex/istex-ent-uportal/master/info.js
+ * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.js
+ * https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/app.min.js
+ * https://raw.githubusercontent.com/istex/istex-ent-uportal/master/info.js
 			
 ### Déploiement de la portlet dans l'ENT v4
 

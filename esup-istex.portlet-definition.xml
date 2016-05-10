@@ -70,7 +70,7 @@
 		&lt;div id="istex-info"&gt;&lt;/div&gt;&#xD;
 		&lt;istex-search&gt;&lt;/istex-search&gt;&#xD;
 		&lt;istex-results&gt;&lt;/istex-results&gt;&#xD;
-		&lt;istex-facets&gt;&lt;/istex-facets&gt;&#	xD;
+		&lt;istex-facets&gt;&lt;/istex-facets&gt;&#xD;
 		&#xD;
 		&lt;script&gt;&#xD;
 			var istexConfig = {&#xD;
@@ -99,9 +99,9 @@
 		&#xD;
 		&lt;!-- Dependencies --&gt;&#xD;
 		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js&quot;&gt;&lt;/script&gt;&#xD;
-		&lt;script src=&quot;https://cdn.rawgit.com/istex/istex-widgets-angular/master/public/slider/rzslider.js&quot;&gt;&lt;/script&gt;&#xD;
-		&lt;script src=&quot;https://cdn.rawgit.com/istex/istex-widgets-angular/master/app/app.js&quot;&gt;&lt;/script&gt;&#xD;
-		&lt;script src=&quot;https://cdn.rawgit.com/istex/istex-ent-uportal/master/info.js&quot;&gt;&lt;/script&gt;&#xD;
+		&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/slider/rzslider.js&quot;&gt;&lt;/script&gt;&#xD;
+		&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-widgets-angular/master/public/app.min.js&quot;&gt;&lt;/script&gt;&#xD;
+		&lt;script src=&quot;https://raw.githubusercontent.com/istex/istex-ent-uportal/master/info.js&quot;&gt;&lt;/script&gt;&#xD;
 		&#xD;
 		</value>
     </portlet-preference>
